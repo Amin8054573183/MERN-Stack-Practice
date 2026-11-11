@@ -1,0 +1,111 @@
+{
+  "authors": {
+    "count": 3,
+    "sha256": "edd1b6d5aa3acb9df17b4be43a29e9583a07134e85e3477aefcba6d3cc36c8b8",
+    "schema": {
+      "": {
+        "object": 3
+      },
+      "_id": {
+        "int": 3
+      },
+      "name": {
+        "str": 3
+      },
+      "birth_year": {
+        "int": 3
+      }
+    },
+    "unique_key": "_id",
+    "key_min": 100,
+    "key_max": 102
+  },
+  "books": {
+    "count": 3,
+    "sha256": "bf28b95f503e2603eb79b67becd4e08ccd39a4d504e71a3188b78237162d0101",
+    "schema": {
+      "": {
+        "object": 3
+      },
+      "_id": {
+        "int": 3
+      },
+      "title": {
+        "str": 3
+      },
+      "author_id": {
+        "int": 3
+      },
+      "genre": {
+        "str": 3
+      }
+    },
+    "unique_key": "_id",
+    "key_min": 1,
+    "key_max": 3
+  },
+  "data": {
+    "count": 1000,
+    "sha256": "2e15fea1cf3ec23227eaa036815d4cd2b29f04d81624902b3ac01fe93086580c",
+    "schema": {
+      "": {
+        "object": 1000
+      },
+      "index": {
+        "int32": 1000
+      },
+      "name": {
+        "str": 1000
+      },
+      "isActive": {
+        "bool": 1000
+      },
+      "registered": {
+        "date": 1000
+      },
+      "age": {
+        "int32": 1000
+      },
+      "gender": {
+        "str": 1000
+      },
+      "eyeColor": {
+        "str": 1000
+      },
+      "favoriteFruit": {
+        "str": 1000
+      },
+      "company": {
+        "object": 1000
+      },
+      "company.title": {
+        "str": 1000
+      },
+      "company.email": {
+        "str": 1000
+      },
+      "company.phone": {
+        "str": 1000
+      },
+      "company.location": {
+        "object": 1000
+      },
+      "company.location.country": {
+        "str": 1000
+      },
+      "company.location.address": {
+        "str": 1000
+      },
+      "tags": {
+        "array": 1000
+      },
+      "tags[]": {
+        "str": 3556
+      }
+    },
+    "unique_key": "index",
+    "key_min": 0,
+    "key_max": 999
+  },
+  "relationships": "All books.author_id values reference authors._id"
+}
