@@ -9,3 +9,6 @@ build/
 .DS_Store
 __MACOSX/
 *.zip
+sample.env
+eventlog.txt
+*.log
